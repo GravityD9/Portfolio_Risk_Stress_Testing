@@ -6,7 +6,7 @@ from limits_monitor import RiskGovernanceEngine
 
 st.set_page_config(page_title="RiskGuard Engine", layout="wide")
 
-st.title("🛡️ RiskGuard: Portfolio Analytics & Limit Monitoring")
+st.title("🛡️ Portfolio Risk Stress Testing")
 st.markdown("Automated risk measurement and covenant breach detection engine.")
 
 # Sidebar Configuration
