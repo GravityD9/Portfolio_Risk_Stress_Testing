@@ -17,11 +17,23 @@ portfolio_value = st.sidebar.number_input("Total Portfolio Value ($)", value=100
 
 @st.cache_data
 def load_data(tickers):
-    data = yf.download(tickers, start="2023-01-01", end="2024-01-01")['Adj Close']
-    # If a single ticker is provided, yf returns a Series. Convert to DataFrame.
-    if isinstance(data, pd.Series):
-        data = data.to_frame(tickers[0])
-    return data.pct_change().dropna()
+    # downloading the full dataset first without forcing 'Adj Close'
+    data = yf.download(tickers, start="2023-01-01", end="2024-01-01")
+    
+    # fallback mechanism: use 'Adj Close' if available, otherwise use 'Close'
+    if 'Adj Close' in data.columns:
+        price_data = data['Adj Close']
+    elif 'Close' in data.columns:
+        price_data = data['Close']
+    else:
+        st.error("Error fetching data from Yahoo Finance. Check ticker spellings.")
+        st.stop()
+        
+    # handling single vs multiple tickers safely
+    if isinstance(price_data, pd.Series):
+        price_data = price_data.to_frame(tickers[0])
+        
+    return price_data.pct_change().dropna()
 
 if tickers:
     returns = load_data(tickers)
