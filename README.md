@@ -1,8 +1,8 @@
-# 🛡️ RiskGuard: Portfolio Analytics & Automated Limit Monitoring
+# 🛡️ Portfolio Risk Stress Tessting
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](#) *(Insert your live Streamlit Community Cloud link here)*
 
-**RiskGuard** is a Python-based quantitative risk and operational governance engine. Designed for middle-office and risk management teams, it automates the measurement of market risk (VaR, CVaR), executes portfolio stress tests, and dynamically monitors asset allocations against predefined debt covenants and concentration limits. 
+**Portfolio RIsk Stress Testing** is a Python-based quantitative risk and operational governance engine. Designed for middle-office and risk management teams, it automates the measurement of market risk (VaR, CVaR), executes portfolio stress tests, and dynamically monitors asset allocations against predefined debt covenants and concentration limits. 
 
 By identifying structural anomalies and threshold breaches in real-time, RiskGuard replaces manual Excel exception-handling with a programmatic, zero-defect audit trail.
 
@@ -19,7 +19,7 @@ By identifying structural anomalies and threshold breaches in real-time, RiskGua
 
 ## 🏗️ System Architecture
 
-RiskGuard is built on a modular architecture to separate quantitative mathematics from operational governance logic:
+The engine is built on a modular architecture to separate quantitative mathematics from operational governance logic:
 
 1.  `risk_engine.py`: The quantitative core utilizing `numpy` and `scipy.stats` to execute array-based risk modeling.
 2.  `limits_monitor.py`: The compliance rules engine. Evaluates outputs from the risk engine against strict governance thresholds to identify material deviations.
@@ -40,8 +40,8 @@ RiskGuard is built on a modular architecture to separate quantitative mathematic
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YourUsername/RiskGuard.git](https://github.com/YourUsername/RiskGuard.git)
-   cd RiskGuard
+   git clone https://github.com/GravityD9/Portfolio_Risk_Stress_Testing
+   cd Portfolio_Risk_Stress_Testing
    ```
 2. **Install dependencies:**
    ```bash
@@ -51,11 +51,3 @@ RiskGuard is built on a modular architecture to separate quantitative mathematic
    ```bash
    streamlit run app.py
    ```
-
----
-
-## 💡 Why I Built This
-
-> *"Effective risk management requires both quantitative precision and rigorous operational governance."*
-
-I engineered RiskGuard to bridge the gap between back-office compliance and front-office risk analytics. Drawing from my professional background in Anti-Money Laundering (AML) operations—where I acted as a Sampling Analyst managing zero-defect quality controls for massive commercial datasets—I wanted to apply strict exception-handling frameworks to market risk. 
