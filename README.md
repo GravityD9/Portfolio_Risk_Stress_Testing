@@ -1,6 +1,6 @@
 # 🛡️ Portfolio Risk Stress Tessting
 
-[!Streamlit App](https://portfolioriskstresstesting-864t4pynxzds2vdnrjpdny.streamlit.app/#portfolio-risk-stress-testing)
+[Streamlit App](https://portfolioriskstresstesting-864t4pynxzds2vdnrjpdny.streamlit.app/#portfolio-risk-stress-testing)
 
 **Portfolio RIsk Stress Testing** is a Python-based quantitative risk and operational governance engine. Designed for middle-office and risk management teams, it automates the measurement of market risk (VaR, CVaR), executes portfolio stress tests, and dynamically monitors asset allocations against predefined debt covenants and concentration limits. 
 
