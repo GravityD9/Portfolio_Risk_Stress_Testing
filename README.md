@@ -8,7 +8,7 @@ By identifying structural anomalies and threshold breaches in real-time, this mo
 
 ---
 
-## 🎯 Key Capabilities
+## Key Capabilities
 
 *   **Quantitative Risk Measurement (BAU):** Computes Historical Value at Risk (VaR), Expected Shortfall (CVaR), and Maximum Drawdown across user-defined multi-asset portfolios.
 *   **Automated Covenant & Limit Monitoring:** Continuously evaluates portfolio weights and risk exposures against hardcoded limits (e.g., maximum single-asset concentration of 20%, maximum allowable daily dollar-loss limits).
@@ -17,7 +17,7 @@ By identifying structural anomalies and threshold breaches in real-time, this mo
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The engine is built on a modular architecture to separate quantitative mathematics from operational governance logic:
 
@@ -28,7 +28,7 @@ The engine is built on a modular architecture to separate quantitative mathemati
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 *   **Core Logic & Analytics:** `Python 3.10+`, `pandas`, `numpy`, `scipy`
 *   **Data Ingestion:** `yfinance` (Yahoo Finance API)
@@ -36,7 +36,7 @@ The engine is built on a modular architecture to separate quantitative mathemati
 
 ---
 
-## 🚀 Quick Start / Local Deployment
+## Quick Start / Local Deployment
 
 1. **Clone the repository:**
    ```bash
