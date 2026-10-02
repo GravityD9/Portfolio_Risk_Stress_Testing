@@ -40,8 +40,8 @@ The engine is built on a modular architecture to separate quantitative mathemati
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/GravityD9/Portfolio_Risk_Stress_Testing.git
-   cd Portfolio_Risk_Stress_Testing
+   git clone https://github.com/GravityD9/RiskGuard.git
+   cd RiskGuard
    ```
 2. **Install dependencies:**
    ```bash
